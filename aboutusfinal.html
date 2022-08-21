@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>About Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" type="text/css" href="CSSfinal/aboutus_stylefinal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script defer src="JSfinal/scripts-final.js"></script>
+  <script defer src="JSfinal/cart-final.js"></script>
+</head>
+</head>
+
+<body>
+
+  <header>
+
+    <div class="dropdown" onclick="myFunction(this)">
+      <div class="menu-container">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <nav class="dropdown-content">
+        <a href="aboutusfinal.html">About Us</a>
+        <a href="aboutyoufinal.html">About You</a>
+        <a href="entrypageshop.html">The Experience Shop</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="indexfinal.html">Home</a>
+      </nav>
+    </div>
+
+    <h1 class="about-us-header">.About Us.</h1>
+
+         <!-- CART MODAL -->
+
+    <!-- Trigger/Open The Modal -->
+<button id="myBtn"><i class="fa fa-shopping-cart"></i></button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- CART Modal content -->
+  <div class="modal-content">
+    <span class="close">&times; CLOSE</span>
+    <section class="container content-section">
+      <h2 class="section-header">.Your Cart.</h2>
+        <div class="cart-row">
+          <span class="cart-item cart-header cart-column">ITEM</span>
+          <span class="cart-price cart-header cart-column">PRICE</span>
+          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+          <div class="cart-row">
+            <div class="cart-item cart-column">
+              <img class="cart-item-image" src="Images/exp1.jpg" width="100" height="100">
+              <span class="cart-item-title">Romanian Language Classes</span>
+            </div>
+            <span class="cart-price cart-column">&#128522;30</span>
+            <div class="cart-quantity cart-column">
+              <input class="cart-quantity-input" type="number" value="1">
+              <button class="btn btn-danger" type="button">REMOVE</button>
+            </div>
+          </div>
+          <div class="cart-row">
+            <div class="cart-item cart-column">
+              <img class="cart-item-image" src="Images/exp5.jpg" width="100" height="100">
+              <span class="cart-item-title">Fun Activities for Kids</span>
+            </div>
+            <span class="cart-price cart-column">&#128522;40</span>
+            <div class="cart-quantity cart-column">
+              <input class="cart-quantity-input" type="number" value="2">
+              <button class="btn btn-danger" type="button">REMOVE</button>
+            </div>
+          </div>
+        </div>
+        <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">&#128522;70</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </section>
+  </div>
+
+  </div>
+
+  </header>
+
+        <!-- ABOUT US Description -->
+
+  <main class="section-teasers">
+    <div class="teaser teaser-row">
+      <div class="teaser-image">
+        <img src="Images/aboutus_1.jpg" alt="">
+      </div>
+
+      <div class="teaser-info">
+        
+        <P class="teaser-excerpt"><h2 class="teaser-title">"Who are these people??"</h2>
+        We are an NGO (Non-Governmental Organisation) and all our services are FREE. But... <em>nothing is really for free, is it now?</em> We can imagine you thinking that. And you are right.
+        <br>
+        Which is why you see a shopping cart on this website.
+        All are services come in exchange for smile. Yes, you read it well: smiles.
+        <br> 
+        The more smiles you give us, the more services we provide you.
+        <br>
+        We believe in the soul healing power of good mood. And what else than smiles to bring that?
+        <br>
+        Sounds weird? Add to cart the experiences you want to join and come meet us. You will see we keep count of your smiles and apply fines if the smile payment has not been made.</P>  
+     </div>
+   </div>
+
+   <div class="teaser teaser-row">
+      <div class="teaser-image">
+        <img src="Images/aboutus_2.jpg" alt="">
+      </div>
+
+      <div class="teaser-info">
+        
+        <P class="teaser-excerpt"><h2 class="teaser-title">Why Foreigners?</h2>
+        Remember Paddington? The movie? 
+        <br>That is why!
+        <br>
+        Because here, at The Foreigner Experience, we all know what it is like to be a stranger in a more or less strange land. And while we love the challenge of it all, we also could have appreciated an orienting hand back in the day. 
+        </P>  
+     </div>
+   </div>
+
+        <!-- Our Team -->
+
+   <section class="our-team">
+    <div class="container narrow">
+      <h2 class="section-title">The Crew</h2>
+      <div class="our-team-wrapper">
+        <img src="Images/ourteam1.jpg" alt="">
+        <img src="Images/ourteam2.jpg" alt="">
+        <img src="Images/ourteam3.jpg" alt="">
+        <img src="Images/ourteam4.jpg" alt="">
+        <img src="Images/ourteam5.jpg" alt="">
+      </div>
+      <p>Yeeaah...no. Not yet at least</p>
+    </div>
+  </section>
+  
+      <!-- Subscribe Newsletter -->
+
+    <section class="newsletter">
+    <div class="container">
+      <h2 class="newsletter-title">Newsletter</h2>
+      <form action="" class="newsletter-form">
+        <input type="email" name="email" placeholder="email" autocomplete="off">
+        <input type="submit" value="subscribe" name="submit">
+      </form>
+      <p>Subscribe to our newsletter to find out what's new in the foreigner community</p>
+    </div>
+  </section>
+   
+  </main>
+ 
+
+</body>
+</html>
+
+<!--
+
+      <button class="myBtns"><img src="Images/ourteam1.jpg" alt=""></button>
+
+      <
+      <div id="myModal" class="modals">
+
+
+        <div class="modals-content">
+          <div class="modal-header">
+            <span class="closed">×</span>
+            <h2>The Witty Kid</h2>
+          </div>
+          <div class="modal-body">
+            <p>She's sassy and wants to change the world one smartass reply at a time. She will be there at you meet and greet to learn how to be sassy in multiple cultures. And she will make sure you pass your citizenship exam, even if you want to give up at times.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="myBtns"><img src="Images/ourteam2.jpg" alt=""></button>
+
+
+      <div id="myModal2" class="modals">
+
+
+        <div class="modals-content">
+          <div class="modal-header">
+            <span class="closed">×</span>
+            <h2>The Dreamer</h2>
+          </div>
+          <div class="modal-body">
+            <p>He dreams of a borderless world where migration is not a crime. He will organize all your fun activities while giving you legal advice on whatever it is that's bothering you.</p>
+          </div>
+        </div>
+      </div>
+
+ 
+      <button class="myBtns"><img src="Images/ourteam3.jpg" alt=""></button>
+
+
+      <div id="myModal3" class="modals">
+
+        <div class="modals-content">
+          <div class="modal-header">
+            <span class="closed">×</span>
+            <h2>The Face</h2>
+          </div>
+          <div class="modal-body">
+            <p>Meeting her is a test for your stereotypes. Do not fall for it. She is the one who decides what money you get and has the patience and knowledge to go through endless counselling sessions.</p>
+          </div>
+        </div>
+      </div>
+
+    
+      <button class="myBtns"><img src="Images/ourteam4.jpg" alt=""></button>
+
+
+      <div id="myModal4" class="modals">
+
+        <div class="modals-content">
+          <div class="modal-header">
+            <span class="closed">×</span>
+            <h2>The Face</h2>
+          </div>
+          <div class="modal-body">
+            <p>She's the boss, nothing else to say here.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <button class="myBtns"><img src="Images/ourteam5.jpg" alt=""></button>
+
+
+      <div id="myModal5" class="modals">
+
+        <div class="modals-content">
+          <div class="modal-header">
+            <span class="closed">×</span>
+            <h2>The Brooding Implementer</h2>
+          </div>
+          <div class="modal-body">
+            <p>He is a stranger, dark and mysterious stranger. He is the only one who knows when winter is coming and how to manage beyond the wall of job hunting. If anyone can find you a job, he will.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <p>Yeeaah...no. Not yet at least</p>
+    </div>
+  </section> -->

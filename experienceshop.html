@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>The Experience Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="CSSfinal/experienceshop_stylefinal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script defer src="JSfinal/scripts-final.js"></script>
+  <script defer src="JSfinal/cart-final.js"></script>
+  <!--<script defer src="JSfinal/cart-demo2.js"></script>-->
+</head>
+</head>
+
+<body>
+
+  <header>
+
+    <div class="dropdown" onclick="myFunction(this)">
+      <div class="menu-container">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <nav class="dropdown-content">
+        <a href="aboutusfinal.html">About Us</a>
+        <a href="aboutyoufinal.html">About You</a>
+        <a href="entrypageshop.html">The Experience Shop</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="indexfinal.html">Home</a>
+      </nav>
+    </div>
+
+    <h1 class="experience-shop-header">.The Experience Shop.</h1>
+
+         <!-- CART MODAL -->
+
+    <!-- Trigger/Open The Modal -->
+<button id="myBtn"><i class="fa fa-shopping-cart"></i></button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- CART Modal content -->
+  <div class="modal-content">
+    <span class="close">&times; CLOSE</span>
+    <section class="container content-section">
+      <h2 class="section-header">.Your Cart.</h2>
+        <div class="cart-row">
+          <span class="cart-item cart-header cart-column">ITEM</span>
+          <span class="cart-price cart-header cart-column">PRICE</span>
+          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+          <div class="cart-row">
+            <div class="cart-item cart-column">
+              <img class="cart-item-image" src="Images/exp1.jpg" width="100" height="100">
+              <span class="cart-item-title">Romanian Language Classes</span>
+            </div>
+            <span class="cart-price cart-column">&#128522;30</span>
+            <div class="cart-quantity cart-column">
+              <input class="cart-quantity-input" type="number" value="1">
+              <button class="btn btn-danger" type="button">REMOVE</button>
+            </div>
+          </div>
+          <div class="cart-row">
+            <div class="cart-item cart-column">
+              <img class="cart-item-image" src="Images/exp5.jpg" width="100" height="100">
+              <span class="cart-item-title">Fun Activities for Kids</span>
+            </div>
+            <span class="cart-price cart-column">&#128522;40</span>
+            <div class="cart-quantity cart-column">
+              <input class="cart-quantity-input" type="number" value="2">
+              <button class="btn btn-danger" type="button">REMOVE</button>
+            </div>
+          </div>
+        </div>
+        <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">&#128522;70</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </section>
+  </div>
+
+  </div>
+
+ </header>
+
+ <!-- Experience SHOP --> 
+
+  <div class="row px-5 pt-5">
+    <div class="col-md-4 mt-4 mt-sm-0 card-container">
+      <div class="card text-center product p-4 pt-5 border-0 h-100 rounded-500">
+
+          <!-- Start Description in Modal -->
+
+          <button class="trigger"><img class="img-fluid d-block mx-auto" src="Images/exp1.jpg" alt=""></button>
+          <div class="modal2">
+              <div class="modal-content2">
+                  <span class="close-button">&times;</span>
+                    <section class="prod-description">
+ 
+                      <p>We teach Romanian based on your specific needs and levels. Classes are structured by modules depending on knowledge, availability and preferences.</p>
+                      <br>
+                     
+                      <details>
+                       <summary>Course Features</summary>
+                       <br>
+                          <ul>
+                            <li>6 Level-based Modules</li>
+                            <li>Informal teaching methods</li>
+                            <li>Experience based learning</li>
+                            <li>Multinational colleagues</li>
+                            <li>A young and energic teacher</li>
+                            <li>Outdoor and indoor classes</li>
+                          </ul>
+                      </details>
+                      <br>
+
+                      <p>PRICE / module: &#128522;30 </p>
+ 
+                    </section>
+              </div>
+          </div>
+
+          <!-- End Description in Modal -->
+
+        <div class="card-body p-4 py-0 h-xs-440p">
+          <h5 class="card-title font-weight-semi-bold mb-3 w-xl-220p mx-auto">Romanian Language Classes</h5>
+          <p class="price">&#128522;30</p>
+        </div>
+        <p class="btn w-100 px-4 mx-auto">
+          <input type="submit" class="btn btn-dark btn-lg w-100 shop-item-button" name="add-button" value="Add to Cart">
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-4 mt-4 mt-sm-0 card-container">
+      <div class="card text-center product p-4 pt-5 border-0 h-100 rounded-500">
+        <a href="prod2.html"><img class="img-fluid d-block mx-auto" src="Images/exp2.jpg" alt=""></a>
+        <div class="card-body p-4 py-0 h-xs-440p">
+          <h5 class="card-title font-weight-semi-bold mb-3 w-xl-220p mx-auto">Preparation for the Citizenship Exam</h5>
+          <p class="price">&#128522;20</p>
+        </div>
+        <p class="btn w-100 px-4 text-center mx-auto">
+          <input type="submit" class="btn btn-dark btn-lg w-100 shop-item-button" name="add-button" value="Add to Cart"></p>
+      </div>
+    </div>
+
+    <div class="col-md-4 mt-4 mt-sm-0 card-container">
+      <div class="card text-center product p-4 pt-5 border-0 h-100 rounded-500">
+        <a href="prod3.html"><img class="img-fluid d-block mx-auto" src="Images/exp3.jpg" alt=""></a>
+        <div class="card-body p-4 py-0 h-xs-440p">
+          <h5 class="card-title font-weight-semi-bold mb-3 w-xl-220p mx-auto">Emergency Money</h5>
+          <p class="price">&#128522;10</p>
+        </div>
+        <p class="btn w-100 px-4 mx-auto">
+          <input type="submit" class="btn btn-dark btn-lg w-100 shop-item-button" name="add-button" value="Add to Cart"></p>
+      </div>
+    </div>
+
+    <div class="col-md-4 mt-4 mt-sm-0 card-container">
+      <div class="card text-center product p-4 pt-5 border-0 h-100 rounded-500">
+        <a href="prod4.html"><img class="img-fluid d-block mx-auto" src="Images/exp4.jpg" alt=""></a>
+        <div class="card-body p-4 py-0 h-xs-440p">
+          <h5 class="card-title font-weight-semi-bold mb-3 w-xl-220p mx-auto">Cultural Accommodation Classes</h5>
+          <p class="price">&#128522;25</p>
+        </div>
+        <p class="btn w-100 px-4 mx-auto">
+          <input type="submit" class="btn btn-dark btn-lg w-100 shop-item-button" name="add-button" value="Add to Cart"></p>
+      </div>
+    </div>
+
+    <div class="col-md-4 mt-4 mt-sm-0 card-container">
+      <div class="card text-center product p-4 pt-5 border-0 h-100 rounded-500">
+        <a href="prod5.html"><img class="img-fluid d-block mx-auto" src="Images/exp5.jpg" alt=""></a>
+        <div class="card-body p-4 py-0 h-xs-440p">
+          <h5 class="card-title font-weight-semi-bold mb-3 w-xl-220p mx-auto">Activities for Children</h5>
+          <p class="price">&#128522;40</p>
+        </div>
+        <p class="btn w-100 px-4 mx-auto">
+          <input type="submit" class="btn btn-dark btn-lg w-100 shop-item-button" name="add-button" value="Add to Cart"></p>
+      </div>
+    </div>
+
+    <div class="col-md-4 mt-4 mt-sm-0 card-container">
+      <div class="card text-center product p-4 pt-5 border-0 h-100 rounded-500">
+        <a href="prod6.html"><img class="img-fluid d-block mx-auto" src="Images/exp6.jpg" alt=""></a>
+        <div class="card-body p-4 py-0 h-xs-440p">
+          <h5 class="card-title font-weight-semi-bold mb-3 w-xl-220p mx-auto">Meet & Greet with Locals and other Foreigners</h5>
+          <p class="price">&#128522;35</p>
+        </div>
+        <p class="btn w-100 px-4 mx-auto">
+          <input type="submit" class="btn btn-dark btn-lg w-100 shop-item-button" name="add-button" value="Add to Cart"></p>
+      </div>
+    </div>
+
+    <div class="col-md-4 mt-4 mt-sm-0 card-container">
+      <div class="card text-center product p-4 pt-5 border-0 h-100 rounded-500">
+        <a href="prod7.html"><img class="img-fluid d-block mx-auto" src="Images/exp7.jpg" alt=""></a>
+        <div class="card-body p-4 py-0 h-xs-440p">
+          <h5 class="card-title font-weight-semi-bold mb-3 w-xl-220p mx-auto">Legal Advice</h5>
+          <p class="price">&#128522;20</p>
+        </div>
+        <p class="btn w-100 px-4 mx-auto">
+          <input type="submit" class="btn btn-dark btn-lg w-100 shop-item-button" name="add-button" value="Add to Cart"></p>
+      </div>
+    </div>
+
+    <div class="col-md-4 mt-4 mt-sm-0 card-container">
+      <div class="card text-center product p-4 pt-5 border-0 h-100 rounded-500">
+        <a href="prod8.html"><img class="img-fluid d-block mx-auto" src="Images/exp8.jpg" alt=""></a>
+        <div class="card-body p-4 py-0 h-xs-440p">
+          <h5 class="card-title font-weight-semi-bold mb-3 w-xl-220p mx-auto">Social Support</h5>
+          <p class="price">&#128522;30</p>
+        </div>
+        <p class="btn w-100 px-4 mx-auto">
+          <input type="submit" class="btn btn-dark btn-lg w-100 shop-item-button" name="add-button" value="Add to Cart"></p>
+      </div>
+    </div>
+
+    <div class="col-md-4 mt-4 mt-sm-0 card-container">
+      <div class="card text-center product p-4 pt-5 border-0 h-100 rounded-500">
+        <a href="prod9.html"><img class="img-fluid d-block mx-auto" src="Images/exp9.jpg" alt=""></a>
+        <div class="card-body p-4 py-0 h-xs-440p">
+          <h5 class="card-title font-weight-semi-bold mb-3 w-xl-220p mx-auto">Job Hunting Assistance</h5>
+          <p class="price">&#128522;15</p>
+        </div>
+        <p class="btn w-100 px-4 mx-auto">
+          <input type="submit" class="btn btn-dark btn-lg w-100 shop-item-button" name="add-button" value="Add to Cart"></p>
+      </div>
+    </div>
+
+  </div>
+ 
+ 
+
+</body>
+</html>
